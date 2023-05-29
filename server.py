@@ -72,14 +72,17 @@ def query():
     kustoString = ""
     data = request.json
     try:
+        print("Saksham Checking1")
         index = db_chain.run(data["input"])
         split_string = index.split("SQLQuery:")
         message = split_string[0].strip()
         sqlString = split_string[1].strip()
         kustoString = SQLToKusto(split_string[1].strip())
+        print("Saksham Checking2")
         # print("SQLString: ", sqlString)
         # print("KustoString: ", kustoString)
     except:
+        print("Saksham Checking3")
         index2 = db_chain2.run(data["input"])
         message = index2
 

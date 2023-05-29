@@ -10,6 +10,16 @@
     <script src="{{ url_for('static', filename='kancil.js') }}"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Watchman for a service</title>
+    <style>
+        body {
+          background-image: url("https://images.unsplash.com/photo-1644088379091-d574269d422f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2893&q=80");
+          background-color: rgba(0, 0, 0, 0.5); /* Sets the transparency to 50% */
+          background-blend-mode: multiply; /* Multiplies the background image and color */
+        }
+        div {
+            color: white
+        }
+      </style>
 </head>
 <body>
     <!-- As a heading -->
@@ -23,12 +33,12 @@
         <div class="row pt-3">
             <div class="col-md-12">                    
                 <blockquote class="blockquote text-center">
-                    <h3 style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;" class="mb-0">Find Solutions to your Telemetry and Logs</h3>
+                    <h3 style="font-size: 24px; font-family: Arial, Helvetica, sans-serif; color: white" class="mb-0">Analyze Viva Insights Telemetry</h3>
                 </blockquote>
             </div>
             <form>
                 <div class="col-md-12">                    
-                    <p>Enter your question: </p>
+                    <!-- <p style="font-family: Arial, Helvetica, sans-serif; color: white">Enter your question: </p> -->
                     <!-- <div class="input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text">Question</span>
@@ -37,7 +47,7 @@
                         <button type="button" class="btn btn-primary" id="send">Done</button>
                     </div> -->
                     <div class="input-group mb-3">
-                        <textarea class="form-control" id="prompt" rows="2"></textarea>
+                        <textarea class="form-control" id="prompt" rows="2" placeholder="Ask query"></textarea>
                         <button class="btn btn-outline-secondary" style="background-color: #4356e6; color: white;" type="button" id="send">Done</button>
                         <!-- <button type="button" class="btn btn-primary" id="send">Done</button> -->
                     </div>
